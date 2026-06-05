@@ -1,0 +1,13 @@
+*.o
+*.orig
+config.h
+patches.h
+dmenu
+dmenu_path
+dmenu_run
+stest
+dwm
+dwm-msg
+slock
+st
+st-scrollback-0.8.5.diff
