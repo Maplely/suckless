@@ -1,0 +1,6 @@
+#!/bin/sh
+# Apps pessoais (copie para ~/.xinitrc.local)
+~/Downloads/appimages/helium.AppImage &
+(sleep 10 && flatpak run com.discordapp.Discord) &
+(sleep 1 && steam) &
+(sleep 1 && materialgram) &

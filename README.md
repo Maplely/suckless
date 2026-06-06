@@ -74,6 +74,8 @@ suckless/
 │   ├── xbindkeysrc
 │   ├── Xresources
 │   ├── xinitrc
+│   ├── xinitrc.local.example
+│   ├── xprofile
 │   ├── dwm.desktop
 │   ├── fehbg
 │   ├── wall.jpg

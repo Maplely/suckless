@@ -28,6 +28,7 @@ chmod +x "$HOME/.local/bin/dwmstatus.sh"
 
 cp configs/xinitrc "$HOME/.xinitrc"
 chmod +x "$HOME/.xinitrc"
+cp configs/xprofile "$HOME/.xprofile"
 cp configs/fehbg "$HOME/.fehbg"
 chmod +x "$HOME/.fehbg"
 

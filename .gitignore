@@ -1,7 +1,12 @@
 *.o
 *.orig
-config.h
-patches.h
+dmenu-flexipatch/config.h
+dmenu-flexipatch/patches.h
+dwm-flexipatch/config.h
+dwm-flexipatch/patches.h
+st-flexipatch/config.h
+st-flexipatch/patches.h
+slock/config.h
 dmenu-flexipatch/dmenu
 dmenu-flexipatch/dmenu_path
 dmenu-flexipatch/dmenu_run
