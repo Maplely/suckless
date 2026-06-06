@@ -1,6 +1,6 @@
 # suckless
 
-Configuração personalizada do dwm, dmenu, st e slock.
+Configuração personalizada do dwm, dmenu, st, slock, picom, dunst e X11.
 
 ## Dependências
 
@@ -19,7 +19,16 @@ sudo pacman -S --needed picom feh dunst xbindkeys maim xclip \
   xdg-desktop-portal-gtk xdg-desktop-portal pcmanfm thunar
 ```
 
-## Instalar
+## Instalar (tudo de uma vez)
+
+```sh
+./install.sh
+```
+
+Isso compila e instala os 4 programas suckless **e** copia as configurações de
+picom, dunst, xbindkeys, Xresources e mic-toggle.
+
+## Instalar só os binários
 
 ```sh
 cd dmenu-flexipatch && sudo make clean install && cd ..
@@ -30,7 +39,13 @@ cd slock && sudo make clean install && cd ..
 
 ## Desfazer (uninstall)
 
-Remove os binários instalados:
+Remove os binários e as configurações:
+
+```sh
+./uninstall.sh
+```
+
+Remove só os binários:
 
 ```sh
 cd dmenu-flexipatch && sudo make uninstall && cd ..
@@ -44,4 +59,22 @@ Remove as dependências (opcional):
 ```sh
 sudo pacman -Rns picom feh dunst xbindkeys maim xclip \
   pulseaudio-utils lm_sensors libnotify
+```
+
+## Estrutura
+
+```
+suckless/
+├── configs/
+│   ├── picom/picom.conf
+│   ├── dunst/dunstrc
+│   ├── xbindkeysrc
+│   ├── Xresources
+│   └── mic-toggle.sh
+├── dmenu-flexipatch/
+├── dwm-flexipatch/
+├── st-flexipatch/
+├── slock/
+├── install.sh
+└── uninstall.sh
 ```

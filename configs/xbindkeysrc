@@ -1,0 +1,5 @@
+"~/.local/bin/mic-toggle.sh"
+  Menu
+
+"killall picom 2>/dev/null; slock; picom --config ~/.config/picom/picom.conf &"
+  Control+Alt+l
