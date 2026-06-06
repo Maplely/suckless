@@ -26,7 +26,10 @@ sudo pacman -S --needed picom feh dunst xbindkeys maim xclip \
 ```
 
 Isso compila e instala os 4 programas suckless **e** copia as configurações de
-picom, dunst, xbindkeys, Xresources e mic-toggle.
+picom, dunst, xbindkeys, Xresources, xinitrc, autostart, status bar, wallpaper
+e cria a entrada `/usr/share/xsessions/dwm.desktop` para o DM.
+
+Assim o DWM aparece na lista de sessões junto com outras DEs instaladas.
 
 ## Instalar só os binários
 
@@ -71,6 +74,7 @@ suckless/
 │   ├── xbindkeysrc
 │   ├── Xresources
 │   ├── xinitrc
+│   ├── dwm.desktop
 │   ├── fehbg
 │   ├── wall.jpg
 │   ├── mic-toggle.sh

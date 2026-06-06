@@ -37,4 +37,9 @@ chmod +x "$HOME/.dwm/autostart.sh"
 
 cp configs/wall.jpg "$HOME/Imagens/wall.jpg"
 
+# Instalar entrada no display manager (para coexisitir com outras DEs)
+echo "==> Instalando entrada no DM..."
+sudo mkdir -p /usr/share/xsessions
+sudo cp configs/dwm.desktop /usr/share/xsessions/dwm.desktop
+
 echo "==> Suckless instalado com sucesso!"

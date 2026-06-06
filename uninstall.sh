@@ -23,4 +23,6 @@ rm -f "$HOME/.fehbg"
 rm -f "$HOME/.dwm/autostart.sh"
 rm -f "$HOME/Imagens/wall.jpg"
 
+sudo rm -f /usr/share/xsessions/dwm.desktop
+
 echo "==> Suckless desinstalado!"
