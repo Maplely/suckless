@@ -22,8 +22,12 @@ sudo pacman -S --needed picom feh dunst xbindkeys maim xclip \
 ## Instalar (tudo de uma vez)
 
 ```sh
-./install.sh
+make install
 ```
+
+> **Nota:** use `make install`, **não** `sudo make install`. O script já usa
+> `sudo` internamente só onde necessário. `sudo make install` copiaria as
+> configurações para `/root` em vez do seu home.
 
 Isso compila e instala os 4 programas suckless **e** copia as configurações de
 picom, dunst, xbindkeys, Xresources, xinitrc, autostart, status bar, wallpaper
