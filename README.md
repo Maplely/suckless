@@ -70,7 +70,12 @@ suckless/
 │   ├── dunst/dunstrc
 │   ├── xbindkeysrc
 │   ├── Xresources
-│   └── mic-toggle.sh
+│   ├── xinitrc
+│   ├── fehbg
+│   ├── wall.jpg
+│   ├── mic-toggle.sh
+│   ├── dwmstatus.sh
+│   └── dwm/autostart.sh
 ├── dmenu-flexipatch/
 ├── dwm-flexipatch/
 ├── st-flexipatch/

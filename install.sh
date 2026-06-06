@@ -23,4 +23,18 @@ mkdir -p "$HOME/.local/bin"
 cp configs/mic-toggle.sh "$HOME/.local/bin/mic-toggle.sh"
 chmod +x "$HOME/.local/bin/mic-toggle.sh"
 
+cp configs/local/bin/dwmstatus.sh "$HOME/.local/bin/dwmstatus.sh"
+chmod +x "$HOME/.local/bin/dwmstatus.sh"
+
+cp configs/xinitrc "$HOME/.xinitrc"
+chmod +x "$HOME/.xinitrc"
+cp configs/fehbg "$HOME/.fehbg"
+chmod +x "$HOME/.fehbg"
+
+mkdir -p "$HOME/.dwm"
+cp configs/dwm/autostart.sh "$HOME/.dwm/autostart.sh"
+chmod +x "$HOME/.dwm/autostart.sh"
+
+cp configs/wall.jpg "$HOME/Imagens/wall.jpg"
+
 echo "==> Suckless instalado com sucesso!"

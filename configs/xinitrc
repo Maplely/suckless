@@ -1,0 +1,15 @@
+[ -f ~/.xprofile ] && . ~/.xprofile
+xset +fp /usr/share/fonts/misc/ /usr/share/fonts/75dpi/ 2>/dev/null
+export XDG_SESSION_TYPE=x11
+export XDG_CURRENT_DESKTOP=dwm
+/usr/lib/xdg-desktop-portal-gtk &
+/usr/lib/xdg-desktop-portal &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+~/Downloads/appimages/helium.AppImage &
+(sleep 10 && flatpak run com.discordapp.Discord) &
+(sleep 1 && steam) &
+(sleep 1 && materialgram) &
+
+killall picom 2>/dev/null
+(slock; picom --vsync --config /home/mapymapy/.config/picom/picom.conf &) &
+exec dwm
