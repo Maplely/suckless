@@ -1,6 +1,6 @@
 # suckless
 
-Configuração personalizada do dwm, dmenu, st, slock, picom, dunst e X11.
+MINHA configuração PESSOAL personalizada do dwm, dmenu, st, slock, picom, dunst e X11.
 
 ## Dependências
 
